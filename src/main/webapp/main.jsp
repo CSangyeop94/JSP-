@@ -1,15 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="UTF-8"%>
+    pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>JSP 웹 게시판</title>
+<title>Insert title here</title>
 </head>
 <body>
-HelloWorld
-	<script>
-		location.href = 'main.jsp'
-	</script>
+
 </body>
 </html>
