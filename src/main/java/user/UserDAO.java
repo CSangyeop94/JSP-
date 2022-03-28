@@ -50,7 +50,7 @@ public class UserDAO {
 		
 	}
 	public int join(User user ) {
-		String SQL = "INSERT IN TO USER VALUE (?, ?, ?, ?, ?)";
+		String SQL = "INSERT IN TO USER VALUES (?, ?, ?, ?, ?)";
 				try{
 					pstmt = conn.prepareStatement(SQL);
 					pstmt.setString(1, user.getUserID());

@@ -18,6 +18,17 @@
 </head>
 <body>
 	<%
+		String userID = null;
+		if (session.getAttribute("userID") != null){
+			userID = (String) session.getAttribute("userID");
+		}
+		if (userID != null){ 
+			PrintWriter script = response.getWriter();
+			script.println("<script>");
+			script.println("alert('이미 로그인이 되어 있습니다.')");
+			script.println("location.href = main.jsp");
+			script.println("</script>");
+		}
 		if (user.getUserID() == null || user.getUserPassword() == null || user.getUserName() == null
 		|| user.getUserGender() == null || user.getUserEmail() ==null) {
 			PrintWriter script = response.getWriter();
@@ -37,12 +48,14 @@
 				script.println("</script>");
 			}
 			else  {
+				session.setAttribute("userID", user.getUserID());
+				//회원가입에 성공한 사용자를 메인페이지에 이동할수있도록 해줌
 				PrintWriter script = response.getWriter();
 				script.println("<script>");
 				script.println("location.href = 'main.jsp'");
 				script.println("</script>");
 			}
-			
+		
 		}
 	%>
 
