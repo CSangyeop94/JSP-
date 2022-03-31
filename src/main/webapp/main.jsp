@@ -29,7 +29,7 @@
 		</button>
 		<a class="navbar-brand" href="main.jsp">JSP 게시판 웹 사이트</a> //  brand 로고같은것
 		</div>
-		<div class="collapse navbar-collapse" di="bs-example-navbar-collapse-1">
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		<ul class="nav navbar-nav"> // navbar(메뉴바)
 			<li class="active"><a href="main.jsp">메인</a></li>
 			<li><a href="bbs.jsp">게시판</a></li>
@@ -45,7 +45,7 @@
 				<ul class="dropdown-menu">
 					<li><a href="login.jsp">로그인</a></li>
 					<li><a href="join.jsp">회원가입</a></li>
-				`</ul>
+				</ul>
 				</li>
 			</ul>
 				
@@ -71,6 +71,6 @@
 	//에니메이션담당하는 자바스크립트 jquery참조
 	<script src="js/bootstrap.js"></script>
 	//부트스트랩에서 지원하는 자바스크립트파일
-	</div>
+	
 </body>
 </html>
