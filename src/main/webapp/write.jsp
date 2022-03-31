@@ -73,7 +73,7 @@
 				<table class="table table-striped" style="text-align: center; border:1px solid #dddddd">
 					<thead>
 						<tr>
-						<th colspan="2" style="background-color": #eeeeeee; text-align: center;">rptlvks rmfTMrl didtlr</th>
+						<th colspan="2" style="background-color: #eeeeeee; text-align: center;">rptlvks rmfTMrl didtlr</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -81,8 +81,7 @@
 							<td><input type="text" class="form-control" placeholder="글 제목" name="bbsTitle" maxlength="50"></td>
 						</tr>
 						<tr>	
-							<td><textarea class="form-control" placeholder="글 내용" name="bbsContent" maxlenght="2048" style="height:350px;"></textarea></td>-
-						</tr>
+							<td><textarea class="form-control" placeholder="글 내용" name="bbsContent" maxlength="2048" style="height:350px;"></textarea></td></tr>
 					</tbody>
 				</table>
 				<input type="submit" class="btn btn-primary pull-right" value="글쓰기">	
@@ -93,6 +92,6 @@
 	//에니메이션담당하는 자바스크립트 jquery참조
 	<script src="js/bootstrap.js"></script>
 	//부트스트랩에서 지원하는 자바스크립트파일
-	</div>
+	
 </body>
 </html>
