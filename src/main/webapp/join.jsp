@@ -4,8 +4,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="viewport content="width=device-width", initial-scale="1">
-//부스스트랩은 해상도에 맞게 디자인이 변경되는 템플렛이라 간단하게 반응형 메타만적용
+<meta name="viewport" content="width=device-width", initial-scale="1">
+<link rel="stylesheet" href="css/custom.css">
 <link rel="stylesheet" href="css/bootstrap.css">
 //스타일시트.css 폴더의 부트스트랩 참조하겠다는의미
 <title>JSP 웹 게시판</title>

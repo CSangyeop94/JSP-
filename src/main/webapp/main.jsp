@@ -5,10 +5,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="viewport content="width=device-width", initial-scale="1">
+<meta name="viewport" content="width=device-width", initial-scale="1">
 //부스스트랩은 해상도에 맞게 디자인이 변경되는 템플렛이라 간단하게 반응형 메타만적용
 <link rel="stylesheet" href="css/bootstrap.css">
-//스타일시트.css 폴더의 부트스트랩 참조하겠다는의미
+<link rel="stylesheet" href="css/custom.css">
 <title>JSP 웹 게시판</title>
 </head>
 <body>
@@ -59,7 +59,7 @@
 					aria-expanded="false">회원관리<span class="caret"></span></a>
 				<ul class="dropdown-menu">
 					<li><a href="logoutAction.jsp">로그아웃</a></li>
-				`</ul>
+				</ul>
 				</li>
 			</ul>
 			<% 	
@@ -67,6 +67,41 @@
 			%>
 					</div>
 	</nav>
+	<div class="contatiner">
+		<div class="jumbotron">
+			<div class ="container">
+				<h1>웹 사이트 소개</h1>
+				<p>이 웹 사이트는 부트스트랩으로 만든 JSP 웹 사이트입니다. 최소한의 간단한 로직만을 이용하여 개발하였습니다.</p>
+				<p><a class="btn btn-primary btn-pull" href="#" role="button">자세히 알아보기</a></p>
+			</div>	
+		</div>
+	</div>
+	<div class="container">
+		<div id="myCarousel" class="carousel slide" data-ride="carouserl">
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="01"></li>
+				<li data-target="#myCarousel" data-slide-to="02"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="images/00.jpg">				
+				</div>
+				<div class="item active">
+					<img src="images/01.jpg">				
+				</div>
+				<div class="item active">
+					<img src="images/02.jpg">				
+				</div>
+			</div>
+			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+		</div>
+	</div>
 	<script src ="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	//에니메이션담당하는 자바스크립트 jquery참조
 	<script src="js/bootstrap.js"></script>
