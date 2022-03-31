@@ -23,7 +23,7 @@ HelloWorld
 		</button>
 		<a class="navbar-brand" href="main.jsp">JSP 게시판 웹 사이트</a> //  brand 로고같은것
 		</div>
-		<div class="collapse navbar-collapse" di="bs-example-navbar-collapse-1">
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		<ul class="nav navbar-nav"> 
 		// navbar(메뉴바)
 			<li><a href="main.jsp">메인</a></li>
@@ -35,8 +35,8 @@ HelloWorld
 					data-toggle="dropdown" role="button" aria-haspopup="true"
 					aria-expanded="false">접속하기<span class="caret"></span></a>
 				<ul class="dropdown-menu">
-					<li class="active"><a href="login.jsp">로그인</a></li>
-					<li><a href="join.jsp">회원가입</a></li>
+					<li><a href="login.jsp">로그인</a></li>
+					<li class="active"><a href="join.jsp">회원가입</a></li>
 				</ul>
 				</li>
 			</ul>
@@ -49,26 +49,26 @@ HelloWorld
 				<form method="post" action="loginAction.jsp"> // post(정보를 숨기면서 보낼때 사용하는 메소드)
 					<h3 style="text-align:center;">회원가입 화면</h3>
 					<div class="form-group">
-						<input type="text" class="form-control" palceholder="아이디" name="userID" maxlength="20">
+						<input type="text" class="form-control" placeholder="아이디" name="userID" maxlength="20">
 					</div>				
 					<div class="form-group">
-						<input type="password" class="form-control" palceholder="비밀번호" name="userPassword" maxlength="20">
+						<input type="password" class="form-control" placeholder="비밀번호" name="userPassword" maxlength="20">
 					</div>
 					<div class="form-group">
-						<input type="text" class="form-control" palceholder="이름" name="userName" maxlength="20">
+						<input type="text" class="form-control" placeholder="이름" name="userName" maxlength="20">
 					</div>
 					<div class="form-group" style="text-align: center;">
 						<div class="btn group" data-toggle="button">
 							<label class="btn btn-primary active">
-								<input type="radio" name="userGender" autocomplate="off" value="남자" checked>남자
+								<input type="radio" name="userGender" autocomplete="off" value="남자" checked>남자
 							</label>
 						</div>
 						<div class="btn group" data-toggle="button">
 							<label class="btn btn-primary active">
-								<input type="radio" name="userGender" autocomplate="off" value="여자" checked>여자
+								<input type="radio" name="userGender" autocomplete="off" value="여자" checked>여자
 							</label>
 							<div class="form-group">
-								<input type="email" class="form-control" palceholder="이메일" name="userEmail" maxlength="30">
+								<input type="email" class="form-control" placeholder="이메일" name="userEmail" maxlength="30">
 							</div>
 						</div>
 					</div>
