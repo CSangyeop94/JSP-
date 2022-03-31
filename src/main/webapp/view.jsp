@@ -43,7 +43,7 @@
 		</button>
 		<a class="navbar-brand" href="main.jsp">JSP 게시판 웹 사이트</a> //  brand 로고같은것
 		</div>
-		<div class="collapse navbar-collapse" di="bs-example-navbar-collapse-1">
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		<ul class="nav navbar-nav"> // navbar(메뉴바)
 			<li><a href="main.jsp">메인</a></li>
 			<li class="active"><a href="bbs.jsp">게시판</a></li>
@@ -59,7 +59,7 @@
 				<ul class="dropdown-menu">
 					<li><a href="login.jsp">로그인</a></li>
 					<li><a href="join.jsp">회원가입</a></li>
-				`</ul>
+				</ul>
 				</li>
 			</ul>
 				
@@ -73,7 +73,7 @@
 					aria-expanded="false">회원관리<span class="caret"></span></a>
 				<ul class="dropdown-menu">
 					<li><a href="logoutAction.jsp">로그아웃</a></li>
-				`</ul>
+				</ul>
 				</li>
 			</ul>
 			<% 	
@@ -86,7 +86,7 @@
 				<table class="table table-striped" style="text-align: center; border:1px solid #dddddd">
 					<thead>
 						<tr>
-						<th colspan="3" style="background-color": #eeeeeee; text-align: center;">게시판 글 보기</th>
+						<th colspan="3" style="background-color: #eeeeeee; text-align: center;">게시판 글 보기</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -113,12 +113,12 @@
 						</tr>
 					</tbody>
 				</table>
-				<a href="bbs.jsp" class=btn btn-primary">목록</a>
+				<a href="bbs.jsp" class="btn btn-primary">목록</a>
 				<%
 					if(userID != null && userID.equals(bbs.getUserID())) {
 				%>
-						<a href="update.jsp?bbsID=<%= bbsID %>" class=btn btn-primary">수정</a>
-						<a href="deleteAction.jsp?bbsID=<%= bbsID %>" class=btn btn-primary">삭제</a>
+						<a href="update.jsp?bbsID=<%= bbsID %>" class="btn btn-primary">수정</a>
+						<a onclick="return confirm('정말 삭제 하겠습니까?')" href="deleteAction.jsp?bbsID=<%= bbsID %>" class="btn btn-primary">삭제</a>
 					
 				<% 
 					}
@@ -129,6 +129,6 @@
 	//에니메이션담당하는 자바스크립트 jquery참조
 	<script src="js/bootstrap.js"></script>
 	//부트스트랩에서 지원하는 자바스크립트파일
-	</div>
+	
 </body>
 </html>
