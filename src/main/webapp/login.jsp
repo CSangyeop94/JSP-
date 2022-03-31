@@ -23,7 +23,7 @@ HelloWorld
 		</button>
 		<a class="navbar-brand" href="main.jsp">JSP 게시판 웹 사이트</a> //  brand 로고같은것
 		</div>
-		<div class="collapse navbar-collapse" di="bs-example-navbar-collapse-1">
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		<ul class="nav navbar-nav"> // navbar(메뉴바)
 			<li><a href="main.jsp">메인</a></li>
 			<li><a href="bbs.jsp">게시판</a></li>
@@ -48,10 +48,10 @@ HelloWorld
 				<form method="post" action="loginAction.jsp"> // post(정보를 숨기면서 보낼때 사용하는 메소드)
 					<h3 style="text-align:center;">로그인 화면</h3>
 					<div class="form-group">
-						<input type="text" class="form-control" palceholder="아이디" name="userID" maxlength="20">
+						<input type="text" class="form-control" placeholder="아이디" name="userID" maxlength="20">
 					</div>				
 					<div class="form-group">
-						<input type="password" class="form-control" palceholder="비밀번호" name="userPassword" maxlength="20">
+						<input type="password" class="form-control" placeholder="비밀번호" name="userPassword" maxlength="20">
 					</div>
 					<input type="submit" class="btn btn-primary form-control" value="로그인">
 				</form>
